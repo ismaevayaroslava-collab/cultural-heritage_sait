@@ -1,0 +1,307 @@
+/* ========================================
+   СТРАНИЦА АРХИВЫ
+   ======================================== */
+
+.archives-main {
+    padding: 40px 0 80px;
+}
+
+/* Герой секция с анимацией */
+.archives-hero {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, rgba(44, 36, 31, 0.8) 0%, rgba(23, 14, 56, 0.6) 100%);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.archives-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(195, 185, 174, 0.1) 0%, transparent 70%);
+    animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.hero-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+.title-line {
+    display: block;
+    font-size: 56px;
+    font-weight: 700;
+    color: #EAE0D5;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    animation: fadeInUp 1s ease;
+}
+
+.title-line.highlight {
+    color: #5dbeb4;
+    text-shadow: 0 0 30px rgba(93, 190, 180, 0.5);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-subtitle {
+    position: relative;
+    z-index: 1;
+    font-size: 22px;
+    color: #c3b9ae;
+    font-weight: 400;
+    animation: fadeInUp 1s ease 0.3s both;
+}
+
+/* Вводный текст */
+.archives-intro {
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.intro-text {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #d4d0c8;
+    text-align: center;
+}
+
+/* Карусель для каждого народа */
+.people-carousel {
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+.people-carousel h2 {
+    color: #EAE0D5;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Контейнер карусели */
+.carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel-wrapper {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+}
+
+.photo-caption {
+    padding: 15px;
+    text-align: center;
+    color: #d4d0c8;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+/* Кнопки навигации */
+.carousel-btn {
+    background: rgba(195, 185, 174, 0.3);
+    border: 2px solid #c3b9ae;
+    color: #EAE0D5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+    background: rgba(195, 185, 174, 0.6);
+    transform: scale(1.1);
+}
+
+.carousel-btn:active {
+    transform: scale(0.95);
+}
+
+/* Счетчик слайдов */
+.carousel-counter {
+    text-align: center;
+    margin-top: 15px;
+    color: #c3b9ae;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ========================================
+   СВЕТЛАЯ ТЕМА ДЛЯ АРХИВОВ
+   ======================================== */
+
+body.light-theme .archives-hero {
+    background: linear-gradient(135deg, rgba(139, 115, 85, 0.1) 0%, rgba(139, 115, 85, 0.2) 100%);
+}
+
+body.light-theme .title-line {
+    color: #8B7355;
+}
+
+body.light-theme .title-line.highlight {
+    color: #2E8B7F;
+    text-shadow: 0 0 30px rgba(46, 139, 127, 0.3);
+}
+
+body.light-theme .hero-subtitle {
+    color: #5D4E3D;
+}
+
+body.light-theme .intro-text {
+    color: #5D4E3D;
+}
+
+body.light-theme .people-carousel h2 {
+    color: #8B7355;
+}
+
+body.light-theme .carousel-wrapper {
+    background: rgba(139, 115, 85, 0.1);
+}
+
+body.light-theme .photo-caption {
+    color: #5D4E3D;
+    background: rgba(139, 115, 85, 0.1);
+}
+
+body.light-theme .carousel-btn {
+    background: rgba(139, 115, 85, 0.2);
+    border-color: #8B7355;
+    color: #5D4E3D;
+}
+
+body.light-theme .carousel-btn:hover {
+    background: rgba(139, 115, 85, 0.4);
+}
+
+body.light-theme .carousel-counter {
+    color: #8B7355;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .carousel-slide img {
+        height: 400px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-line {
+        font-size: 42px;
+    }
+    
+    .hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .people-carousel h2 {
+        font-size: 26px;
+    }
+    
+    .carousel-slide img {
+        height: 300px;
+    }
+    
+    .carousel-container {
+        gap: 10px;
+    }
+    
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    
+    .photo-caption {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title-line {
+        font-size: 32px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .people-carousel h2 {
+        font-size: 22px;
+    }
+    
+    .carousel-slide img {
+        height: 250px;
+    }
+    
+    .carousel-btn {
+        display: none; /* Скрываем кнопки на маленьких экранах */
+    }
+    
+    .carousel-counter {
+        font-size: 14px;
+    }
+}
