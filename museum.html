@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музейные коллекции - Культурное наследие</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/museum.css">
+</head>
+
+<body>
+    <!-- Кнопка переключения темы -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-icon">☀️</span>
+    </button>
+
+    <div class="wrapper">
+        <div class="container">
+            <!-- Шапка сайта -->
+            <header>
+                <div class="logo">
+                    Культурное наследие<br>
+                    коренных народов<br>
+                    Красноярского края
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="languages.html">Языки</a></li>
+                        <li><a href="archives.html">Архивы</a></li>
+                        <li class="active"><a href="museum.html">Музейные коллекции</a></li>
+                        <li class="bth"><a href="about.html">О проекте</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Основной контент -->
+            <main class="museum-main">
+                <!-- Заголовок с анимацией -->
+                <section class="museum-hero">
+                    <h1 class="hero-title">
+                        <span class="title-line">Музейные</span>
+                        <span class="title-line highlight">коллекции</span>
+                    </h1>
+                    <p class="hero-subtitle">Уникальные артефакты и художественное наследие Таймыра</p>
+                </section>
+
+                <!-- Интерактивная галерея -->
+                <section class="gallery-section">
+                    <div class="gallery-intro">
+                        <h2>Коллекция артефактов</h2>
+                        <p>Исследуйте уникальные предметы материальной культуры коренных народов Красноярского края.
+                            Каждый экспонат хранит память поколений, отражая гармонию человека, природы и традиций
+                            Севера.</p>
+                    </div>
+
+                    <!-- Галерея с карточками -->
+                    <div class="museum-grid">
+                        <!-- Карточка 1: Молчанов Борис Николаевич -->
+                        <div class="museum-card" data-category="art">
+                            <div class="card-image-wrapper">
+                                <div class="image-grid">
+                                    <img src="static/images/museum/molchanov-1.jpg" alt="Картина с оленями"
+                                        class="gallery-img" onclick="openLightbox(this)">
+                                    <img src="static/images/museum/molchanov-2.jpg" alt="Портрет" class="gallery-img"
+                                        onclick="openLightbox(this)">
+                                    <img src="static/images/museum/molchanov-3.jpg" alt="Пейзаж с оленями"
+                                        class="gallery-img" onclick="openLightbox(this)">
+                                    <img src="static/images/museum/molchanov-4.jpg" alt="Горный пейзаж"
+                                        class="gallery-img" onclick="openLightbox(this)">
+                                </div>
+                                <div class="card-overlay">
+                                    <span class="category-tag">Живопись</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Молчанов Борис Николаевич</h3>
+                                <p class="artist-info">Живописец Таймыра, мастер этнографического пейзажа</p>
+                                <div class="expander">
+                                    <p>Борис Николаевич Молчанов — выдающийся художник, посвятивший своё творчество
+                                        документированию жизни и ландшафтов Таймыра. Его работы отличаются глубоким
+                                        пониманием северной природы и духовной связи между коренными народами и их
+                                        окружающей средой.</p>
+
+                                    <div class="history-note">
+                                        📜 <strong>Историческая справка:</strong> Творческий путь Молчанова начался в
+                                        середине XX века, когда он переехал на Таймыр и погрузился в жизнь коренных
+                                        общин. Его картины стали не только художественными произведениями, но и ценными
+                                        этнографическими документами, зафиксировавшими уходящие традиции оленеводства и
+                                        кочевья.
+                                    </div>
+
+                                    <div class="fact-box">
+                                        💡 <strong>Интересный факт:</strong> Молчанов часто использовал натуральные
+                                        пигменты, смешивая их с оленьим жиром и смолами лиственницы, что придавало его
+                                        работам особую фактуру и долговечность, характерную для северных мастеров.
+                                    </div>
+
+                                    <ul class="artwork-list">
+                                        <li>🦌 «Северные олени на водопое» (холст, масло)</li>
+                                        <li>👤 «Портрет представителя коренного народа» (акварель)</li>
+                                        <li>🏔️ «Таймырские горы на закате» (масло)</li>
+                                        <li>🌅 «Стойбище в тундре» (смешанная техника)</li>
+                                    </ul>
+                                    <p class="materials"><strong>Период творчества:</strong> 1950–1990-е гг.</p>
+                                    <p class="region"><strong>Место хранения:</strong> Таймырский краеведческий музей
+                                    </p>
+                                </div>
+                                <button class="expand-btn">Подробнее →</button>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 2: Мотюмяку Турдагин -->
+                        <div class="museum-card" data-category="art">
+                            <div class="card-image-wrapper">
+                                <div class="image-grid">
+                                    <img src="static/images/museum/turdagin-1.jpg" alt="Чумы" class="gallery-img"
+                                        onclick="openLightbox(this)">
+                                    <img src="static/images/museum/turdagin-2.jpg" alt="Выставка" class="gallery-img"
+                                        onclick="openLightbox(this)">
+                                    <img src="static/images/museum/turdagin-3.jpg" alt="Оленеводческая сцена"
+                                        class="gallery-img" onclick="openLightbox(this)">
+                                    <img src="static/images/museum/turdagin-4.jpg" alt="Сцена из жизни"
+                                        class="gallery-img" onclick="openLightbox(this)">
+                                </div>
+                                <div class="card-overlay">
+                                    <span class="category-tag">Графика</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Мотюмяку Турдагин</h3>
+                                <p class="artist-info">Ненецкий график, летописец кочевой жизни</p>
+                                <div class="expander">
+                                    <p>Мотюмяку Турдагин — один из первых профессиональных художников из числа коренных
+                                        народов Севера. Его графические работы отличаются документальной точностью и
+                                        глубокой любовью к традиционному укладу ненецкого народа.</p>
+
+                                    <div class="history-note">
+                                        📜 <strong>Происхождение и путь:</strong> Родился в семье оленеводов на Ямале, с
+                                        детства наблюдал за жизнью стойбищ. В 1930-е годы поступил в художественное
+                                        училище, но вернулся на родину, чтобы запечатлеть исчезающий мир тундры. Его
+                                        работы выставлялись в Москве, Ленинграде и за рубежом.
+                                    </div>
+
+                                    <div class="fact-box">
+                                        💡 <strong>Интересный факт:</strong> Турдагин создал уникальную серию зарисовок
+                                        «Оленья упряжка в движении», где с анатомической точностью передал пластику
+                                        оленей и динамику кочёвки. Эти работы до сих пор используются учёными при
+                                        изучении традиционных методов транспорта.
+                                    </div>
+
+                                    <ul class="artwork-list">
+                                        <li>⛺ «Чумы на весенней стоянке» (тушь, перо)</li>
+                                        <li>🎨 «Выставка в Дудинке, 1968 г.» (фотографическая фиксация)</li>
+                                        <li>🦌 «Перекочёвка через реку» (карандаш, акварель)</li>
+                                        <li>🏕️ «Семейный очаг» (смешанная техника)</li>
+                                    </ul>
+                                    <p class="materials"><strong>Техники:</strong> Тушь, перо, карандаш, акварель</p>
+                                    <p class="period"><strong>Активный период:</strong> 1930–1970-е гг.</p>
+                                </div>
+                                <button class="expand-btn">Подробнее →</button>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 3: Налобник оленя -->
+                        <div class="museum-card featured" data-category="crafts">
+                            <div class="card-image-wrapper">
+                                <div class="main-image">
+                                    <img src="static/images/museum/olenenok-1.jpg" alt="Налобник оленя"
+                                        class="gallery-img main" onclick="openLightbox(this)">
+                                </div>
+                                <div class="card-overlay">
+                                    <span class="category-tag featured-tag">Резьба по кости</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Налобник (недоуздок) передового оленя</h3>
+                                <p class="artifact-info">Таймыр, долганы, вторая половина XX в.</p>
+                                <div class="expander">
+                                    <p>Уникальный предмет упряжи передового оленя, выполненный в технике сквозной и
+                                        рельефной резьбы. Передовой олень (нарта) занимал особое положение в стаде: он
+                                        задавал ритм движения, знал маршруты кочёвок и обладал высоким статусом среди
+                                        сородичей.</p>
+
+                                    <div class="history-note">
+                                        📜 <strong>Культурное значение:</strong> У долган и ненцев передовой олень часто
+                                        получал имя, участвовал в праздниках и считался духовным проводником стада.
+                                        Налобник не только украшал животное, но и выполнял обережную функцию, защищая от
+                                        злых духов тундры.
+                                    </div>
+
+                                    <div class="fact-box">
+                                        💡 <strong>Технология изготовления:</strong> Основа вырезана из бивня мамонта,
+                                        найденного в вечной мерзлоте. Кожа сыромятная выделывалась вручную с
+                                        использованием мозговой ткани и дыма. Ровдуга (замша) пропитывалась оленьим
+                                        жиром для влагостойкости. Каждый узор имел символическое значение: спирали
+                                        обозначали путь, ромбы — плодородие, волны — реки Таймыра.
+                                    </div>
+
+                                    <ul class="artwork-list">
+                                        <li>🦴 Кость мамонта (основа)</li>
+                                        <li>🌲 Дерево лиственницы (вставки)</li>
+                                        <li>🐾 Кожа сыромятная (ремни)</li>
+                                        <li>🎨 Ровдуга (декоративные накладки)</li>
+                                        <li>🧵 Оленьи сухожилия (нити)</li>
+                                    </ul>
+                                    <p class="materials"><strong>Размеры:</strong> 45 × 12 × 8 см</p>
+                                    <p class="technique"><strong>Техника:</strong> Резьба, гравировка, плетение</p>
+                                    <p class="region"><strong>Место создания:</strong> Посёлок Хатанга, Таймыр</p>
+                                </div>
+                                <button class="expand-btn">Подробнее →</button>
+                            </div>
+                        </div>
+
+                        <!-- Карточка 4: Список экспонатов с фото -->
+                        <div class="museum-card" data-category="sculpture">
+                            <div class="card-image-wrapper">
+                                <div class="image-grid">
+                                    <img src="static/images/museum/paskaal-kalendar.jpg"
+                                        alt="Долганский календарь Паскаал" class="gallery-img"
+                                        onclick="openLightbox(this)">
+                                    <img src="static/images/museum/kirgizov-taimyr.jpg" alt="Киргизов Н.М. — Таймыр"
+                                        class="gallery-img" onclick="openLightbox(this)">
+                                    <img src="static/images/museum/molchanov-kamlanie.jpg"
+                                        alt="Молчанов Б.Б. — Камлание шамана" class="gallery-img"
+                                        onclick="openLightbox(this)">
+                                    <img src="static/images/museum/taranec-krylya.jpg" alt="Таранец В.С. — Крылья любви"
+                                        class="gallery-img" onclick="openLightbox(this)">
+                                </div>
+                                <div class="card-overlay">
+                                    <span class="category-tag featured-tag">Резьба и скульптура</span>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3>Скульптурные композиции и календари</h3>
+                                <p class="artist-info">Таймырские мастера резьбы по кости и рогу</p>
+                                <div class="expander">
+                                    <div class="exhibit-item">
+                                        <h4>🎨 Киргизов Н.М. — «Таймыр»</h4>
+                                        <p>Композиция, посвященная природе и жизни Таймыра. Художественная интерпретация
+                                            северного края через призму традиционного искусства.</p>
+                                        <p><strong>Материалы:</strong> Дерево, кость мамонта</p>
+                                        <p><strong>Год:</strong> 2013</p>
+                                        <p><strong>Регион:</strong> Таймыр</p>
+                                    </div>
+
+                                    <div class="exhibit-item">
+                                        <h4>💫 Таранец В.С. — «Крылья любви»</h4>
+                                        <p>Романтическая композиция, символизирующая любовь и верность. Выполнена в
+                                            технике резьбы по кости с использованием оникса.</p>
+                                        <p><strong>Материалы:</strong> Бивень мамонта, оникс, дерево</p>
+                                        <p><strong>Техника:</strong> Резьба</p>
+                                        <p><strong>Год:</strong> 2016</p>
+                                        <p><strong>Регион:</strong> Таймыр</p>
+                                    </div>
+
+                                    <div class="exhibit-item">
+                                        <h4>🔮 Молчанов Б.Б. — «Камлание шамана»</h4>
+                                        <p>Скульптурная композиция, изображающая шаманский обряд. Детальная проработка
+                                            элементов ритуала и атрибутики шамана.</p>
+                                        <p><strong>Материал:</strong> Рог оленя</p>
+                                        <p><strong>Техника:</strong> Резьба по рогу</p>
+                                        <p><strong>Год:</strong> 2009</p>
+                                        <p><strong>Регион:</strong> Таймыр</p>
+                                    </div>
+
+                                    <div class="exhibit-item featured-item">
+                                        <h4>📅 Паскаал (долганский календарь)</h4>
+                                        <p>Традиционный долганский календарь, вырезанный на бивне мамонта. Уникальный
+                                            памятник материальной культуры, отражающий систему временных представлений
+                                            долган. Гравировка включает обозначения месяцев, природных явлений и важных
+                                            событий.</p>
+                                        <p><strong>Материал:</strong> Бивень мамонта</p>
+                                        <p><strong>Техника:</strong> Резьба, гравировка</p>
+                                        <p><strong>Период:</strong> Конец XIX - XX вв.</p>
+                                        <p><strong>Регион:</strong> Таймыр</p>
+                                        <p><strong>Народ:</strong> Долганы</p>
+                                    </div>
+                                </div>
+                                <button class="expand-btn">Подробнее →</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Дополнительная информация -->
+                <section class="museum-info">
+                    <h2>О коллекциях</h2>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">🏛️</div>
+                            <h3>Таймырский дом народного творчества</h3>
+                            <p>Основной хранитель культурного наследия коренных народов Таймыра.
+                                В фондах музея более 5000 экспонатов, включая предметы быта, одежды,
+                                орудия труда, произведения декоративно-прикладного искусства.</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">🎨</div>
+                            <h3>Художественные коллекции</h3>
+                            <p>Работы современных художников Таймыра, сохраняющих и развивающих
+                                традиции изобразительного искусства коренных народов. Живопись, графика,
+                                скульптура из кости и рога.</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">🔍</div>
+                            <h3>Этнографические материалы</h3>
+                            <p>Предметы традиционного быта, одежды, утвари, орудий оленеводства,
+                                рыболовства и охоты. Уникальные образцы декоративно-прикладного искусства
+                                с традиционными орнаментами.</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">📚</div>
+                            <h3>Цифровой архив</h3>
+                            <p>Проект по оцифровке музейных коллекций, реализуемый при поддержке
+                                компании «РН-Ванкор». Создает условия для сохранения и широкого доступа
+                                к культурному наследию.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Подвал -->
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-block">
+                        <div class="footer-logo">Культурное наследие</div>
+                        <p>Цифровая платформа для сохранения и изучения традиций коренных народов Севера Красноярского
+                            края</p>
+                    </div>
+                    <div class="footer-block">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="languages.html">Языки</a></li>
+                            <li><a href="archives.html">Архивы</a></li>
+                            <li><a href="about.html">О проекте</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block">
+                        <h4>Авторы проекта</h4>
+                        <ul>
+                            <li>Чикинёва А.Д.</li>
+                            <li>Ишмаева Я.М.</li>
+                            <li>Научные руководители:</li>
+                            <li>Мережникова Е.И.</li>
+                            <li>Петрова А.А.</li>
+                            <li>СибГУ им. Решетнева</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">© 2026 Культурное наследие коренных народов Красноярского края</p>
+            </footer>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+        // РАСШИРЕНИЕ КАРТОЧЕК
+        document.addEventListener('DOMContentLoaded', function () {
+            const expandBtns = document.querySelectorAll('.expand-btn');
+
+            expandBtns.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const card = this.closest('.museum-card');
+                    const expander = card.querySelector('.expander');
+
+                    card.classList.toggle('expanded');
+
+                    if (card.classList.contains('expanded')) {
+                        this.textContent = 'Свернуть ←';
+                        expander.style.maxHeight = expander.scrollHeight + 'px';
+                    } else {
+                        this.textContent = 'Подробнее →';
+                        expander.style.maxHeight = '0';
+                    }
+                });
+            });
+
+            // (ПРОСМОТР ФОТО)
+            window.openLightbox = function (img) {
+                const lightbox = document.getElementById('lightbox');
+                const lightboxImg = document.getElementById('lightbox-img');
+                lightbox.style.display = 'flex';
+                lightboxImg.src = img.src;
+                document.body.style.overflow = 'hidden';
+            };
+
+            window.closeLightbox = function () {
+                document.getElementById('lightbox').style.display = 'none';
+                document.body.style.overflow = 'auto';
+            };
+
+            // АНИМАЦИЯ ПОЯВЛЕНИЯ ПРИ СКРОЛЛЕ
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.museum-card, .info-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+
+            // ПЕРЕКЛЮЧЕНИЕ ТЕМЫ
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.querySelector('.theme-icon');
+            const body = document.body;
+
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                body.classList.add('light-theme');
+                if (themeIcon) themeIcon.textContent = '🌙';
+            }
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function () {
+                    body.classList.toggle('light-theme');
+                    if (body.classList.contains('light-theme')) {
+                        if (themeIcon) themeIcon.textContent = '🌙';
+                        localStorage.setItem('theme', 'light');
+                    } else {
+                        if (themeIcon) themeIcon.textContent = '☀️';
+                        localStorage.setItem('theme', 'dark');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

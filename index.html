@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Культурное наследие коренных народов Красноярского края</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <!-- Шапка сайта -->
+            <header>
+                <div class="logo">
+                    Культурное наследие<br>
+                    коренных народов<br>
+                    Красноярского края
+                </div>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="index.html">Главная</a></li>
+                         <li><a href="languages.html">Языки</a></li>
+                        <li><a href="archives.html">Архивы</a></li>
+                        <li><a href="museum.html">Музейные коллекции</a></li>
+                        <li class="bth"><a href="about.html">О проекте</a></li>
+                    </ul>
+                </nav>
+                <!-- Кнопка переключения темы -->
+<button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+    <span class="theme-icon">☀️</span>
+</button>
+            </header>
+
+            <!-- Основной контент - карта -->
+            <main class="map-main">
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="people-filter">По народу</label>
+                        <select id="people-filter" class="filter-select">
+                            <option value="all">Все народы</option>
+                            <option value="nganasany">Нганасаны</option>
+                            <option value="dolgany">Долганы</option>
+                            <option value="nentsy">Ненцы</option>
+                            <option value="entsy">Энцы</option>
+                            <option value="evenki">Эвенки</option>
+                            <option value="kety">Кеты</option>
+                            <option value="selkupy">Селькупы</option>
+                            <option value="chulymtsy">Чулымцы</option>
+                            <option value="khakases">Хакасы</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="region-filter">По региону</label>
+                        <select id="region-filter" class="filter-select">
+                            <option value="all">Весь край</option>
+                            <option value="north">Север</option>
+                            <option value="south">Юг</option>
+                            <option value="center">Центр</option>
+                            <option value="west">Запад</option>
+                            <option value="east">Восток</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="map-wrapper">
+                    <!-- Контейнер для карты -->
+                    <div class="map-container">
+                        <!-- Изображение карты -->
+                        <img src="static/images/krasnoyarsk-map.png" alt="Карта Красноярского края"
+                            class="krai-map-image">
+
+                        <!-- Маркеры народов -->
+                        <!-- Нганасаны - Север -->
+                        <div class="marker" data-people="nganasany" data-regions="north" style="top: 31%; left: 50%;">
+                            <div class="marker-pulse"></div>
+                            <div class="marker-dot"></div>
+                            <span class="marker-label">Нганасаны</span>
+                        </div>
+
+                        <!-- Долганы - Север и Восток -->
+                        <div class="marker" data-people="dolgany" data-regions="north east"
+                            style="top: 28%; left: 70%;">
+                            <div class="marker-pulse"></div>
+                            <div class="marker-dot"></div>
+                            <span class="marker-label">Долганы</span>
+                        </div>
+
+                        <!-- Ненцы - Север -->
+                        <div class="marker" data-people="nentsy" data-regions="north" style="top: 28%; left: 50%;">
+                            <div class="marker-pulse"></div>
+                            <div class="marker-dot"></div>
+                            <span class="marker-label">Ненцы</span>
+                        </div>
+
+                        <!-- Энцы - Север и Запад -->
+                        <div class="marker" data-people="entsy" data-regions="north west" style="top: 33%; left: 33%;">
+                            <div class="marker-pulse"></div>
+                            <div class="marker-dot"></div>
+                            <span class="marker-label">Энцы</span>
+                        </div>
+
+                        <!-- Эвенки - Восток и Север -->
+                        <div class="marker" data-people="evenki" data-regions="north east" style="top: 52%; left: 70%;">
+                            <div class="marker-pulse"></div>
+                            <div class="marker-dot"></div>
+                            <span class="marker-label">Эвенки</span>
+                        </div>
+
+                        <!-- Кеты - Центр -->
+                        <div class="marker" data-people="kety" data-regions="center" style="top: 65%; left: 40%;">
+                            <div class="marker-pulse"></div>
+                            <div class="marker-dot"></div>
+                            <span class="marker-label">Кеты</span>
+                        </div>
+
+                        <!-- Селькупы - Запад и Север -->
+                        <div class="marker" data-people="selkupy" data-regions="north west"
+                            style="top: 61%; left: 25%;">
+                            <div class="marker-pulse"></div>
+                            <div class="marker-dot"></div>
+                            <span class="marker-label">Селькупы</span>
+                        </div>
+
+                        <!-- Чулымцы - Юг и Запад -->
+                        <div class="marker" data-people="chulymtsy" data-regions="south west"
+                            style="top: 72%; left: 30%;">
+                            <div class="marker-pulse"></div>
+                            <div class="marker-dot"></div>
+                            <span class="marker-label">Чулымцы</span>
+                        </div>
+
+                        <!-- Хакасы - Юг -->
+                        <div class="marker" data-people="khakases" data-regions="south" style="top: 87%; left: 40%;">
+                            <div class="marker-pulse"></div>
+                            <div class="marker-dot"></div>
+                            <span class="marker-label">Хакасы</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Модальное окно -->
+            <div id="infoModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2 id="modalTitle">Название народа</h2>
+                    <div class="modal-divider"></div>
+                    <div id="modalBody">
+                        <p>Информация о народе...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <span class="modal-hint">Нажмите вне окна или на крестик, чтобы закрыть</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Подвал -->
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-block">
+                        <div class="footer-logo">Культурное наследие</div>
+                        <p>Цифровая платформа для сохранения и изучения традиций коренных народов Севера Красноярского
+                            края</p>
+                    </div>
+                    <div class="footer-block">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="archives.html">Архивы</a></li>
+                            <li><a href="museum.html">Музейные коллекции</a></li>
+                            <li><a href="about.html">О проекте</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block">
+                        <h4>Авторы проекта</h4>
+                        <ul>
+                            <li>Чикинёва А.Д.</li>
+                            <li>Ишмаева Я.М.</li>
+                            <li>Научные руководители:</li>
+                            <li>Мережникова Е.И.</li>
+                            <li>Петрова А.А.</li>
+                            <li>СибГУ им. Решетнева</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">© 2026 Культурное наследие коренных народов Красноярского края</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="static/js/main.js"></script>
+</body>
+
+</html>

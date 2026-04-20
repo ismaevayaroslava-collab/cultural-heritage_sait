@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Языки коренных народов - Культурное наследие</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/languages.css">
+</head>
+
+<body>
+    <!-- Кнопка переключения темы -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-icon">☀️</span>
+    </button>
+
+    <div class="wrapper">
+        <div class="container">
+            <!-- Шапка сайта -->
+            <header>
+                <div class="logo">
+                    Культурное наследие<br>
+                    коренных народов<br>
+                    Красноярского края
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li class="active"><a href="languages.html">Языки</a></li>
+                        <li><a href="archives.html">Архивы</a></li>
+                        <li><a href="museum.html">Музейные коллекции</a></li>
+                        <li class="bth"><a href="about.html">О проекте</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Основной контент -->
+            <main class="languages-main">
+                <!-- Заголовок с анимацией -->
+                <section class="languages-hero">
+                    <h1 class="hero-title">
+                        <span class="title-line">Языки</span>
+                        <span class="title-line highlight">коренных народов</span>
+                    </h1>
+                    <p class="hero-subtitle">Сохранение языкового разнообразия Севера</p>
+                    <div class="hero-decoration"></div>
+                </section>
+
+                <!-- Вводный текст -->
+                <section class="languages-intro">
+                    <div class="intro-text">
+                        <p>Красноярский край — регион уникального этнокультурного и языкового разнообразия.
+                            Здесь проживают носители языков различных языковых семей: <span class="family-tag">самодийской</span>, 
+                            <span class="family-tag">тунгусо-маньчжурской</span>, <span class="family-tag">тюркской</span>
+                            и <span class="family-tag unique">енисейской</span>. Многие из этих языков находятся под угрозой исчезновения.</p>
+                    </div>
+                </section>
+
+                <!-- Фильтр по языковым семьям -->
+                <section class="languages-filter">
+                    <button class="filter-btn active" data-filter="all">Все языки</button>
+                    <button class="filter-btn" data-filter="samoyedic">Самодийские</button>
+                    <button class="filter-btn" data-filter="tungusic">Тунгусо-маньчжурские</button>
+                    <button class="filter-btn" data-filter="turkic">Тюркские</button>
+                    <button class="filter-btn" data-filter="yeniseian">Енисейские</button>
+                </section>
+
+                <!-- Карточки языков -->
+                <section class="languages-grid">
+                    <!-- Нганасанский язык -->
+                    <div class="language-card" data-family="samoyedic">
+                        <div class="card-header">
+                            <div class="language-badge samoyedic">Самодийский</div>
+                            <h2>Нганасанский</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="language-stats">
+                                <div class="stat">
+                                    <span class="stat-value">~100</span>
+                                    <span class="stat-label">носителей</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Таймыр</span>
+                                    <span class="stat-label">регион</span>
+                                </div>
+                            </div>
+                            <p class="language-description">
+                                Самый северный самодийский язык. Отличается сложной системой падежей (более 10) 
+                                и богатой системой глагольных форм. Сохранил архаичные черты прасамодийского языка.
+                            </p>
+                            <div class="language-meta">
+                                <p><strong>Письменность:</strong> кириллица (с 1970-х)</p>
+                                <p><strong>Статус:</strong> <span class="status-critical">критический</span></p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="language-family">Уральская семья → Самодийская группа</span>
+                        </div>
+                    </div>
+
+                    <!-- Долганский язык -->
+                    <div class="language-card" data-family="turkic">
+                        <div class="card-header">
+                            <div class="language-badge turkic">Тюркский</div>
+                            <h2>Долганский</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="language-stats">
+                                <div class="stat">
+                                    <span class="stat-value">~5 000</span>
+                                    <span class="stat-label">носителей</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Таймыр</span>
+                                    <span class="stat-label">регион</span>
+                                </div>
+                            </div>
+                            <p class="language-description">
+                                Близок к якутскому, но имеет уникальные особенности. Сформировался в XVIII–XIX веках. 
+                                Характеризуется гармонией гласных и агглютинативной структурой.
+                            </p>
+                            <div class="language-meta">
+                                <p><strong>Письменность:</strong> кириллица (с 1930-х)</p>
+                                <p><strong>Статус:</strong> <span class="status-endangered">уязвимый</span></p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="language-family">Тюркская семья → Сибирско-тюркская группа</span>
+                        </div>
+                    </div>
+
+                    <!-- Энецкий язык -->
+                    <div class="language-card featured" data-family="samoyedic">
+                        <div class="card-header">
+                            <div class="language-badge samoyedic">Самодийский</div>
+                            <h2>Энецкий</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="language-stats">
+                                <div class="stat">
+                                    <span class="stat-value">&lt;10</span>
+                                    <span class="stat-label">носителей</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">с. Потепово</span>
+                                    <span class="stat-label">регион</span>
+                                </div>
+                            </div>
+                            <p class="language-description">
+                                Находится на грани исчезновения. Делится на два диалекта: тундровый (маду) и лесной (бай). 
+                                Сохранил уникальные архаичные черты прасамодийского языка.
+                            </p>
+                            <div class="language-meta">
+                                <p><strong>Письменность:</strong> не разработана</p>
+                                <p><strong>Статус:</strong> <span class="status-critical">критический</span></p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="language-family">Уральская семья → Самодийская группа</span>
+                        </div>
+                    </div>
+
+                    <!-- Ненецкий язык -->
+                    <div class="language-card" data-family="samoyedic">
+                        <div class="card-header">
+                            <div class="language-badge samoyedic">Самодийский</div>
+                            <h2>Ненецкий</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="language-stats">
+                                <div class="stat">
+                                    <span class="stat-value">~30 000</span>
+                                    <span class="stat-label">носителей</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Север края</span>
+                                    <span class="stat-label">регион</span>
+                                </div>
+                            </div>
+                            <p class="language-description">
+                                Наиболее многочисленный самодийский язык. Имеет два основных диалекта: тундровый и лесной. 
+                                Сохраняется благодаря кочевому образу жизни носителей.
+                            </p>
+                            <div class="language-meta">
+                                <p><strong>Письменность:</strong> кириллица (с 1930-х)</p>
+                                <p><strong>Статус:</strong> <span class="status-vulnerable">уязвимый</span></p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="language-family">Уральская семья → Самодийская группа</span>
+                        </div>
+                    </div>
+
+                    <!-- Эвенкийский язык -->
+                    <div class="language-card" data-family="tungusic">
+                        <div class="card-header">
+                            <div class="language-badge tungusic">Тунгусо-маньчжурский</div>
+                            <h2>Эвенкийский</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="language-stats">
+                                <div class="stat">
+                                    <span class="stat-value">~5 000</span>
+                                    <span class="stat-label">в крае</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Эвенкия</span>
+                                    <span class="stat-label">регион</span>
+                                </div>
+                            </div>
+                            <p class="language-description">
+                                Имеет множество диалектов. Характеризуется агглютинативной структурой, гармонией гласных 
+                                и отсутствием категории рода. Широко распространён от Енисея до Охотского моря.
+                            </p>
+                            <div class="language-meta">
+                                <p><strong>Письменность:</strong> кириллица (с 1930-х)</p>
+                                <p><strong>Статус:</strong> <span class="status-vulnerable">уязвимый</span></p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="language-family">Тунгусо-маньчжурская семья</span>
+                        </div>
+                    </div>
+
+                    <!-- Кетский язык -->
+                    <div class="language-card unique" data-family="yeniseian">
+                        <div class="card-header">
+                            <div class="language-badge yeniseian unique">Енисейский ✨</div>
+                            <h2>Кетский</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="language-stats">
+                                <div class="stat">
+                                    <span class="stat-value">~200</span>
+                                    <span class="stat-label">носителей</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Туруханск</span>
+                                    <span class="stat-label">регион</span>
+                                </div>
+                            </div>
+                            <p class="language-description">
+                                <strong>Уникальный язык!</strong> Единственный живой представитель енисейской языковой семьи. 
+                                Имеет сложную систему тонов и классификаторов. Объект изучения лингвистов всего мира.
+                            </p>
+                            <div class="language-meta">
+                                <p><strong>Письменность:</strong> кириллица (с 1980-х)</p>
+                                <p><strong>Статус:</strong> <span class="status-critical">критический</span></p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="language-family">Енисейская семья (изолированный)</span>
+                        </div>
+                    </div>
+
+                    <!-- Селькупский язык -->
+                    <div class="language-card" data-family="samoyedic">
+                        <div class="card-header">
+                            <div class="language-badge samoyedic">Самодийский</div>
+                            <h2>Селькупский</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="language-stats">
+                                <div class="stat">
+                                    <span class="stat-value">~1 000</span>
+                                    <span class="stat-label">носителей</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Север края</span>
+                                    <span class="stat-label">регион</span>
+                                </div>
+                            </div>
+                            <p class="language-description">
+                                Имеет несколько диалектов. Гамбургский университет оцифровал архив А.И. Кузьминой (1924–2002), 
+                                содержащий 2078 объектов на селькупском языке (1962–1977 гг.).
+                            </p>
+                            <div class="language-meta">
+                                <p><strong>Письменность:</strong> кириллица (с 1930-х)</p>
+                                <p><strong>Статус:</strong> <span class="status-endangered">исчезающий</span></p>
+                            </div>
+                            <a href="https://www.fundus.uni-hamburg.de/en/collections/kuzmina_archive" target="_blank" class="archive-link">
+                                📚 Архив Кузьминой →
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <span class="language-family">Уральская семья → Самодийская группа</span>
+                        </div>
+                    </div>
+
+                    <!-- Чулымский язык -->
+                    <div class="language-card" data-family="turkic">
+                        <div class="card-header">
+                            <div class="language-badge turkic">Тюркский</div>
+                            <h2>Чулымский</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="language-stats">
+                                <div class="stat">
+                                    <span class="stat-value">&lt;50</span>
+                                    <span class="stat-label">носителей</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Юг края</span>
+                                    <span class="stat-label">регион</span>
+                                </div>
+                            </div>
+                            <p class="language-description">
+                                Находится под серьёзной угрозой исчезновения. Сформировался в XVI–XVII веках. 
+                                Сохранил элементы как тюркской, так и самодийской традиций.
+                            </p>
+                            <div class="language-meta">
+                                <p><strong>Письменность:</strong> не разработана</p>
+                                <p><strong>Статус:</strong> <span class="status-critical">критический</span></p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="language-family">Тюркская семья → Сибирско-тюркская группа</span>
+                        </div>
+                    </div>
+
+                    <!-- Хакасский язык -->
+                    <div class="language-card" data-family="turkic">
+                        <div class="card-header">
+                            <div class="language-badge turkic">Тюркский</div>
+                            <h2>Хакасский</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="language-stats">
+                                <div class="stat">
+                                    <span class="stat-value">~40 000</span>
+                                    <span class="stat-label">носителей</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">Респ. Хакасия</span>
+                                    <span class="stat-label">регион</span>
+                                </div>
+                            </div>
+                            <p class="language-description">
+                                Имеет несколько диалектов: сагайский, качинский, кызыльский. Сохранил богатую устную традицию, 
+                                включая героический эпос (алыптыг нимгех) и уникальное горловое пение (хай).
+                            </p>
+                            <div class="language-meta">
+                                <p><strong>Письменность:</strong> кириллица (с 1920-х)</p>
+                                <p><strong>Статус:</strong> <span class="status-vulnerable">уязвимый</span></p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="language-family">Тюркская семья → Кыргызская подгруппа</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Секция о сохранении -->
+                <section class="preservation-info">
+                    <h2>🌍 Сохранение языкового наследия</h2>
+                    <div class="preservation-content">
+                        <div class="preservation-text">
+                            <p>Цифровые технологии открывают новые возможности для фиксации, сохранения и передачи 
+                            языкового наследия коренных народов. Создание электронных словарей и учебных материалов 
+                            помогают сохранить языки для будущих поколений.</p>
+                            
+                            <h3>Основные направления:</h3>
+                            <ul class="preservation-list">
+                                <li>📚 Создание электронных словарей и грамматик</li>
+                                <li>🎓 Образовательные программы на родных языках</li>
+                                <li>📱 Мобильные приложения для изучения языков</li>
+                                <li>🗣️ Записи речи носителей для лингвистических исследований</li>
+                                <li>🌐 Онлайн-курсы и интерактивные уроки</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Подвал -->
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-block">
+                        <div class="footer-logo">Культурное наследие</div>
+                        <p>Цифровая платформа для сохранения и изучения традиций коренных народов Севера Красноярского края</p>
+                    </div>
+                    <div class="footer-block">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="archives.html">Архивы</a></li>
+                            <li><a href="museum.html">Музейные коллекции</a></li>
+                            <li><a href="about.html">О проекте</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block">
+                        <h4>Авторы проекта</h4>
+                        <ul>
+                            <li>Чикинёва А.Д.</li>
+                            <li>Ишмаева Я.М.</li>
+                            <li>Научные руководители:</li>
+                            <li>Мережникова Е.И.</li>
+                            <li>Петрова А.А.</li>
+                            <li>СибГУ им. Решетнева</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">© 2026 Культурное наследие коренных народов Красноярского края</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // ФИЛЬТР ЯЗЫКОВ ПО СЕМЬЯМ
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const languageCards = document.querySelectorAll('.language-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Убираем активный класс у всех кнопок
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Добавляем активный класс к нажатой
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    languageCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-family') === filter) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // ПЕРЕКЛЮЧЕНИЕ ТЕМЫ
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.querySelector('.theme-icon');
+            const body = document.body;
+
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                body.classList.add('light-theme');
+                if (themeIcon) themeIcon.textContent = '🌙';
+            }
+
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function() {
+                    body.classList.toggle('light-theme');
+                    if (body.classList.contains('light-theme')) {
+                        if (themeIcon) themeIcon.textContent = '🌙';
+                        localStorage.setItem('theme', 'light');
+                    } else {
+                        if (themeIcon) themeIcon.textContent = '☀️';
+                        localStorage.setItem('theme', 'dark');
+                    }
+                });
+            }
+            
+            // АНИМАЦИЯ ПОЯВЛЕНИЯ ПРИ СКРОЛЛЕ
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.language-card').forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Архивы - Культурное наследие</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/archives.css">
+</head>
+
+<body>
+    <!-- Кнопка переключения темы -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Переключить тему">
+        <span class="theme-icon">☀️</span>
+    </button>
+
+    <div class="wrapper">
+        <div class="container">
+            <!-- Шапка сайта -->
+            <header>
+                <div class="logo">
+                    Культурное наследие<br>
+                    коренных народов<br>
+                    Красноярского края
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="languages.html">Языки</a></li>
+                        <li class="active"><a href="archives.html">Архивы</a></li>
+                        <li><a href="museum.html">Музейные коллекции</a></li>
+                        <li class="bth"><a href="about.html">О проекте</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Основной контент -->
+            <main class="archives-main">
+                <!-- Заголовок с анимацией -->
+                <section class="archives-hero">
+                    <h1 class="hero-title">
+                        <span class="title-line">Цифровой</span>
+                        <span class="title-line highlight">архив</span>
+                    </h1>
+                    <p class="hero-subtitle">Фотографическое наследие коренных народов Красноярского края</p>
+                </section>
+
+                <section class="archives-intro">
+                    <div class="intro-text">
+                        <p>В цифровом архиве представлены уникальные фотографии, документирующие быт, традиции и
+                            культурное наследие коренных народов Севера. Материалы собраны в ходе экспедиций и
+                            предоставлены культурными учреждениями Красноярского края.</p>
+                    </div>
+                </section>
+
+                <!-- Нганасаны -->
+                <section class="people-carousel">
+                    <h2>Нганасаны</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" data-carousel="nganasany">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="nganasany-track">
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/nganasany/nganasany-1.jpg"
+                                        alt="Нганасаны - фото 1">
+                                    <p class="photo-caption">Фото людей</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/nganasany/nganasany-2.jpg"
+                                        alt="Нганасаны - фото 2">
+                                    <p class="photo-caption">Нганасанские солнцезащитные очки</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/nganasany/nganasany-3.jpg"
+                                        alt="Нганасаны - фото 3">
+                                    <p class="photo-caption">Нганасанская этно-фольклорная группа «Дентедиэ», 2018 год
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" data-carousel="nganasany">&#10095;</button>
+                    </div>
+                </section>
+
+                <!-- Долганы -->
+                <section class="people-carousel">
+                    <h2>Долганы</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" data-carousel="dolgany">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="dolgany-track">
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/dolgany/dolgany-1.jpg" alt="Долганы - фото 1">
+                                    <p class="photo-caption">Долганы</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/dolgany/dolgany-2.jpg" alt="Долганы - фото 2">
+                                    <p class="photo-caption">Национальная одежда долган</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/dolgany/dolgany-3.jpg" alt="Долганы - фото 3">
+                                    <p class="photo-caption">Традиционное блюдо</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/dolgany/dolgany-4.jpg" alt="Долганы - фото 4">
+                                    <p class="photo-caption">Рисунок национальной одежды</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/dolgany/dolgany-5.jpg" alt="Долганы - фото 5">
+                                    <p class="photo-caption">Долганская семья и дом</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" data-carousel="dolgany">&#10095;</button>
+                    </div>
+                </section>
+
+                <!-- Энцы -->
+                <section class="people-carousel">
+                    <h2>Энцы</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" data-carousel="entsy">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="entsy-track">
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/entsy/entsy-1.jpg" alt="Энцы - фото 1">
+                                    <p class="photo-caption">Энцы</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/entsy/entsy-2.jpg" alt="Энцы - фото 2">
+                                    <p class="photo-caption">Быт энцев</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/entsy/entsy-3.jpg" alt="Энцы - фото 3">
+                                    <p class="photo-caption">Быт энцев</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/entsy/entsy-4.jpg" alt="Энцы - фото 4">
+                                    <p class="photo-caption">Быт энцев</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" data-carousel="entsy">&#10095;</button>
+                    </div>
+                </section>
+
+                <!-- Ненцы -->
+                <section class="people-carousel">
+                    <h2>Ненцы</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" data-carousel="nentsy">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="nentsy-track">
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/nentsy/nentsy-1.jpg" alt="Ненцы - фото 1">
+                                    <p class="photo-caption">Ненецкие сани</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/nentsy/nentsy-2.jpg" alt="Ненцы - фото 2">
+                                    <p class="photo-caption">Старшее поколение</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/nentsy/nentsy-3.jpg" alt="Ненцы - фото 3">
+                                    <p class="photo-caption">Оленеводство</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/nentsy/nentsy-4.jpg" alt="Ненцы - фото 4">
+                                    <p class="photo-caption">Соревнования на оленях</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/nentsy/nentsy-5.jpg" alt="Ненцы - фото 5">
+                                    <p class="photo-caption">Дом ненцев</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" data-carousel="nentsy">&#10095;</button>
+                    </div>
+                </section>
+
+                <!-- Эвенки -->
+                <section class="people-carousel">
+                    <h2>Эвенки</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" data-carousel="evenki">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="evenki-track">
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/evenki/evenki-1.jpg" alt="Эвенки - фото 1">
+                                    <p class="photo-caption">Эвенкийское поселение</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/evenki/evenki-2.jpg" alt="Эвенки - фото 2">
+                                    <p class="photo-caption">Эвенки</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/evenki/evenki-3.jpg" alt="Эвенки - фото 3">
+                                    <p class="photo-caption">Традиционный костюм</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/evenki/evenki-4.jpg" alt="Эвенки - фото 4">
+                                    <p class="photo-caption">Оленеводство и быт</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" data-carousel="evenki">&#10095;</button>
+                    </div>
+                </section>
+
+                <!-- Кеты -->
+                <section class="people-carousel">
+                    <h2>Кеты</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" data-carousel="kety">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="kety-track">
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/kety/kety-1.jpg" alt="Кеты - фото 1">
+                                    <p class="photo-caption">Кеты</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/kety/kety-2.jpg" alt="Кеты - фото 2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/kety/kety-3.jpg" alt="Кеты - фото 3">
+                                    <p class="photo-caption">Традиционная одежда</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/kety/kety-4.jpg" alt="Кеты - фото 4">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/kety/kety-5.jpg" alt="Кеты - фото 5">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/kety/kety-6.jpg" alt="Кеты - фото 6">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/kety/kety-7.jpg" alt="Кеты - фото 7">
+                                    <p class="photo-caption">Жилье</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/kety/kety-8.jpg" alt="Кеты - фото 8">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" data-carousel="kety">&#10095;</button>
+                    </div>
+                </section>
+
+                <!-- Селькупы -->
+                <section class="people-carousel">
+                    <h2>Селькупы</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" data-carousel="selkupy">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="selkupy-track">
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/selkupy/selkupy-1.jpg" alt="Селькупы - фото 1">
+                                    <p class="photo-caption">Селькупы</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/selkupy/selkupy-2.jpg" alt="Селькупы - фото 2">
+                                    <p class="photo-caption">Национальные костюмы</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/selkupy/selkupy-3.jpg" alt="Селькупы - фото 3">
+                                    <p class="photo-caption">Дом</p>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" data-carousel="selkupy">&#10095;</button>
+                    </div>
+                </section>
+
+                <!-- Чулымцы -->
+                <section class="people-carousel">
+                    <h2>Чулымцы</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" data-carousel="chulymtsy">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="chulymtsy-track">
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/chulymtsy/chulymtsy-1.jpg" alt="Чулымцы - фото 1">
+                                    <p class="photo-caption">Чулымское поселение</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/chulymtsy/chulymtsy-2.jpg" alt="Чулымцы - фото 2">
+                                    <p class="photo-caption">Традиционная одежда</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/chulymtsy/chulymtsy-3.jpg" alt="Чулымцы - фото 3">
+                                    <p class="photo-caption">Быт чулымцев</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" data-carousel="chulymtsy">&#10095;</button>
+                    </div>
+                </section>
+
+                <!-- Хакасы -->
+                <section class="people-carousel">
+                    <h2>Хакасы</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" data-carousel="khakases">&#10094;</button>
+                        <div class="carousel-wrapper">
+                            <div class="carousel-track" id="khakases-track">
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/khakases/khakases-1.jpg" alt="Хакасы - фото 1">
+                                    <p class="photo-caption">Хакасы</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/khakases/khakases-2.jpg" alt="Хакасы - фото 2">
+                                    <p class="photo-caption">Национальный костюм</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/khakases/khakases-3.jpg" alt="Хакасы - фото 3">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/khakases/khakases-4.jpg" alt="Хакасы - фото 4">
+                                    <p class="photo-caption">Традиционные жилье</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/khakases/khakases-5.jpg" alt="Хакасы - фото 5">
+                                    <p class="photo-caption">Культурное наследие</p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="static/images/archives/khakases/khakases-6.jpg" alt="Хакасы - фото 6">
+                                    <p class="photo-caption">Семья</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" data-carousel="khakases">&#10095;</button>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- Подвал -->
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-block">
+                        <div class="footer-logo">Культурное наследие</div>
+                        <p>Цифровая платформа для сохранения и изучения традиций коренных народов Севера Красноярского
+                            края</p>
+                    </div>
+                    <div class="footer-block">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="languages.html">Языки</a></li>
+                            <li><a href="archives.html">Архивы</a></li>
+                            <li><a href="about.html">О проекте</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-block">
+                        <h4>Авторы проекта</h4>
+                        <ul>
+                            <li>Чикинёва А.Д.</li>
+                            <li>Ишмаева Я.М.</li>
+                            <li>Научные руководители:</li>
+                            <li>Мережникова Е.И.</li>
+                            <li>Петрова А.А.</li>
+                            <li>СибГУ им. Решетнева</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">© 2026 Культурное наследие коренных народов Красноярского края</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // ========================================
+        // КАРУСЕЛИ ДЛЯ СТРАНИЦЫ АРХИВЫ
+        // ========================================
+        document.addEventListener('DOMContentLoaded', function () {
+            // Инициализация всех каруселей
+            const carousels = document.querySelectorAll('.carousel-container');
+
+            carousels.forEach(carousel => {
+                const track = carousel.querySelector('.carousel-track');
+                const slides = carousel.querySelectorAll('.carousel-slide');
+                const prevBtn = carousel.querySelector('.carousel-btn.prev');
+                const nextBtn = carousel.querySelector('.carousel-btn.next');
+                const counter = carousel.querySelector('.carousel-counter');
+
+                let currentIndex = 0;
+                const totalSlides = slides.length;
+
+                // Обновление счетчика
+                function updateCounter() {
+                    if (counter) {
+                        counter.textContent = `${currentIndex + 1} / ${totalSlides}`;
+                    }
+                }
+
+                // Переход к слайду
+                function goToSlide(index) {
+                    if (index < 0) {
+                        currentIndex = totalSlides - 1;
+                    } else if (index >= totalSlides) {
+                        currentIndex = 0;
+                    } else {
+                        currentIndex = index;
+                    }
+
+                    const offset = -currentIndex * 100;
+                    track.style.transform = `translateX(${offset}%)`;
+                    updateCounter();
+                }
+
+                // Следующий слайд
+                function nextSlide() {
+                    goToSlide(currentIndex + 1);
+                }
+
+                // Предыдущий слайд
+                function prevSlide() {
+                    goToSlide(currentIndex - 1);
+                }
+
+                // Обработчики событий
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        nextSlide();
+                    });
+                }
+
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        prevSlide();
+                    });
+                }
+
+                // Инициализация счетчика
+                updateCounter();
+            });
+
+            // ========================================
+            // АНИМАЦИЯ ПОЯВЛЕНИЯ ПРИ СКРОЛЛЕ
+            // ========================================
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.people-carousel').forEach((carousel, index) => {
+                carousel.style.opacity = '0';
+                carousel.style.transform = 'translateY(30px)';
+                carousel.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+                observer.observe(carousel);
+            });
+
+            // ========================================
+            // ПЕРЕКЛЮЧЕНИЕ ТЕМЫ
+            // ========================================
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.querySelector('.theme-icon');
+            const body = document.body;
+
+            // Проверяем сохраненную тему
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                body.classList.add('light-theme');
+                if (themeIcon) {
+                    themeIcon.textContent = '🌙';
+                }
+            }
+
+            // Переключение темы
+            if (themeToggle) {
+                themeToggle.addEventListener('click', function () {
+                    body.classList.toggle('light-theme');
+
+                    if (body.classList.contains('light-theme')) {
+                        if (themeIcon) {
+                            themeIcon.textContent = '🌙';
+                        }
+                        localStorage.setItem('theme', 'light');
+                    } else {
+                        if (themeIcon) {
+                            themeIcon.textContent = '☀️';
+                        }
+                        localStorage.setItem('theme', 'dark');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
